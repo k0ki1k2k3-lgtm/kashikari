@@ -1,0 +1,75 @@
+:root {
+  --bg: #fafafa;
+  --text: #111111;
+  --muted: #555555;
+  --line: #e2e2e2;
+  --link: #1f5fbf;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --text: #f2f2f2;
+    --muted: #a8a8a8;
+    --line: #333333;
+    --link: #8ab4f8;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 32px 0 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+p,
+ul {
+  margin: 0 0 12px;
+}
+
+ul {
+  padding-left: 1.4em;
+}
+
+a {
+  color: var(--link);
+  overflow-wrap: anywhere;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+nav {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 0.95rem;
+}
